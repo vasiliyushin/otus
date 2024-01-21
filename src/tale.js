@@ -11,12 +11,17 @@ function Kolobok(character) {
         console.log('Меня съели');
         break;
       default:
-        console.log( 'Я встретил незнакомца');
+        console.log('Я встретил незнакомца');
         break;
     }  
   }
 
-Kolobok('дедушка');
+//тесты по первому заданию  
+Kolobok('дедушка'); //Я от дедушки ушёл
+Kolobok('заяц'); //Я от зайца ушёл
+Kolobok('лиса'); //Меня съели
+Kolobok('Дед мороз'); //Я встретил незнакомца
+
 
 //второе задание 
 function newYear(character) {
@@ -27,7 +32,12 @@ function newYear(character) {
       break;
     default:
       console.log('Указан неизвестный персонаж');
+      break;
   }
 }
 
+//тесты по второму заданию
 newYear('Дед мороз')
+newYear('Снегурочка')
+newYear('Колобок')
+
