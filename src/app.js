@@ -38,9 +38,10 @@ export const getTotal = (items = [], discount = 0) => {
   if (discount >= 100) {
     throw new Error("Процент скидки не может быть больше 100");
   }
-  
+  //высчитываем стоимость без учета скидки (тут return для переменной total)
   const total = items.reduce((acc, item) => {
     return acc + item.price * item.quantity;
   }, 0);
+  //получаем итоговое значение с учетом скидки (это return для getTotal)
   return total - (total * discount) / 100;
 };
