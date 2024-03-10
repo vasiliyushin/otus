@@ -45,3 +45,20 @@ export const getTotal = (items = [], discount = 0) => {
   //получаем итоговое значение с учетом скидки (это return для getTotal)
   return total - (total * discount) / 100;
 };
+
+const scores = {
+  Anna: 10,
+  Olga: 1,
+  Ivan: 5,
+  Vasiliy: 25
+};
+
+const getScore = (student) => {
+  let sumScores = 0;
+  for (let key in student) {
+    sumScores = sumScores + student[key]
+  }
+  console.log(sumScores)  
+}
+
+getScore(scores)
